@@ -30,7 +30,8 @@ const passportCode = passport.use(new GoogleStrategy(
     {
       clientID : keys.googleclientID,
       clientSecret: keys.googleclientSecret,
-      callbackURL: '/auth/google/callback'
+      callbackURL: '/auth/google/callback',
+      proxy: true
 
     }, 
     
